@@ -1,0 +1,52 @@
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+/* source
+   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container */
+
+img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 48%;
+  margin-bottom: 20px;
+}
+
+h2,
+a {
+  width: 100%;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+https://developer.mozilla.org/en-US/docs/Web/CSS/width */
+
+.grey-text {
+  color: grey;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  max-width: 5em;
+}
