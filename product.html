@@ -3,119 +3,273 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Product page</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="scripts/script.js"></script>
   </head>
   <body>
-    <header>
-      <p>Burger Menu</p>
+    <header role="banner">
+      <img class="burgermenu" src="IMG/burgermenu.png" alt="burger menu" />
+      <h1><img src="IMG/endlogo.png" alt="END logo" class="burger menu" /></h1>
+      <img class="burgermenu" src="IMG/search.png" alt="search icon" />
+      <img src="IMG/shoppingbag.png" class="burgermenu" alt="shopping bag" />
 
-      <img src="IMG/endapp.jpeg" alt="END logo" />
-      <p>zoekbalk</p>
-      <p>Shopping bag</p>
+      <nav class="mobile-menu hidden">
+        <div class="menu-header">
+          <h1 class="menu-logo">END.</h1>
+          <button class="menu-close">&times;</button>
+        </div>
+
+        <div class="men-women-toggle">
+          <button class="toggle-button active" aria-pressed="true">Men</button>
+          <button class="toggle-button" aria-pressed="false">Women</button>
+        </div>
+
+        <ul>
+          <li><a href="#">Latest</a></li>
+          <li><a href="#">Shop By</a></li>
+          <li><a href="#">Launches</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Footwear</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">Active</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Features</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Log In</a></li>
+          <li><a href="#">Shipping Country: Netherlands | EUR €</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Customer Service</a></li>
+          <li><a href="#">Our Apps</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+
+        <ul class="social-media">
+          <li>
+            <a href="#"><img src="IMG/instalogo.png" alt="Instagram logo" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="IMG/twitterlogoGOED.png" alt="Twitter logo"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="IMG/facebooklogo.png" alt="Facebook logo"
+            /></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Other Policies</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+        <p class="footer-text">
+          Copyright © Ashworth and Parker Limited (t/a END.) 2024 | All Rights
+          Reserved
+          <br />
+          Company registration number: 06866013 | VAT number: GB 389764913
+        </p>
+      </nav>
     </header>
+    <main role="main">
+      <ul class="slider">
+        <li>
+          <img src="IMG/arcteryxblack.jpeg" alt="black arcteryx jacket" />
+        </li>
+        <li>
+          <img src="IMG/arcteryxblack2.jpeg" alt="black arcteryx jacket " />
+        </li>
+        <li>
+          <img src="IMG/arcteryxblack3.jpeg" alt="black arcteryx jacket" />
+        </li>
+        <li>
+          <img src="IMG/arcteryxblack4.jpeg" alt="black arcteryx jacket" />
+        </li>
+      </ul>
+      <h1 class="producttitle">Arc'teryx Atom Hoodie Jacket</h1>
+      <h2 class="producttitle">Black</h2>
+      <h2 class="producttitle">$299</h2>
+      <section>
+        <div class="size-selection">
+          <fieldset aria-labelledby="size-selection-label">
+            <legend id="size-selection-label">Select a size</legend>
+            <input
+              type="radio"
+              id="X-SMALL"
+              name="Size"
+              value="X-SMALL"
+              aria-label="Extra Small"
+            />
+            <label for="X-SMALL">X-SMALL</label>
 
-    <section>
-      <img src="IMG/arcteryxblack.jpeg" alt="black arcteryx" />
-      <img src="IMG/arcteryxblack2.jpeg" alt="black arcteryx" />
-      <img src="IMG/arcteryxblack3.jpeg" alt="black arcteryx" />
-      <img src="IMG/arcteryxblack4.jpeg" alt="black arcteryx" />
-      <img src="IMG/blackarcteryx5.jpeg" alt="black arcteryx" />
-      <h1>Arc'teryx Atom Hoodie Jacket</h1>
-      <h2>Black</h2>
-      <h2>$299</h2>
-    </section>
-    <section>
-      <a href="#">Size Guide</a>
+            <input
+              type="radio"
+              id="SMALL"
+              name="Size"
+              value="SMALL"
+              aria-label="Small"
+            />
+            <label for="SMALL">SMALL</label>
 
-      <fieldset>
-        <legend>Select a size</legend>
-        <input type="radio" id="X-SMALL" name="Size" value="X-SMALL" checked />
-        <label for="X-SMALL">X-SMALL</label><br />
+            <input
+              type="radio"
+              id="MEDIUM"
+              name="Size"
+              value="MEDIUM"
+              aria-label="Medium"
+            />
+            <label for="MEDIUM">MEDIUM</label>
 
-        <input type="radio" id="SMALL" name="Size" value="SMALL" />
-        <label for="SMALL">SMALL</label><br />
+            <input
+              type="radio"
+              id="LARGE"
+              name="Size"
+              value="LARGE"
+              aria-label="Large"
+            />
+            <label for="LARGE">LARGE</label>
 
-        <input type="radio" id="MEDIUM" name="Size" value="MEDIUM" />
-        <label for="MEDIUM">MEDIUM</label><br />
+            <input
+              type="radio"
+              id="X-LARGE"
+              name="Size"
+              value="X-LARGE"
+              aria-label="Extra Large"
+            />
+            <label for="X-LARGE">X-LARGE</label>
 
-        <input type="radio" id="LARGE" name="Size" value="LARGE" />
-        <label for="LARGE">LARGE</label><br />
+            <input
+              type="radio"
+              id="XX-LARGE"
+              name="Size"
+              value="XX-LARGE"
+              aria-label="2X Large"
+            />
+            <label for="XX-LARGE">XX-LARGE</label>
+          </fieldset>
 
-        <input type="radio" id="X-LARGE" name="Size" value="X-LARGE" />
-        <label for="X-LARGE">X-LARGE</label><br />
+          <p class="delivery-text">
+            <strong>Order now</strong> to receive
+            <span>Wed 25 Sep - Thu 26 Sep</span>
+          </p>
+          <!--https://www.w3schools.com/html/html_forms.asp?
+          https://www.w3schools.com/js/js_validation.asp-->
+        </div>
 
-        <input type="radio" id="XX-LARGE" name="Size" value="XX-LARGE" />
-        <label for="XX-LARGE">XX-LARGE</label>
-      </fieldset>
-      <!-- BRON: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio 
- -->
-      <p>Order Now to receive Tue 17 Sep - Wed 18 Sep</p>
-      <p>Add to Wishlist</p>
-    </section>
+        <button class="save-container" aria-label="Save to wishlist">
+          <img class="save" src="IMG/saveicon.png" alt="Save icon" />
+          <span class="wishlist-text">Save to wishlist</span>
+        </button>
+      </section>
 
-    <section>
-      <h2>DESCRIPTION</h2>
-      <p>
-        Gearing you up for ambitious treks and easy hikes, Arc'teryx is now at
-        the top of performance outerwear game. Insulated with synthetic
-        Coreloft™ fill, this hooded jacket is designed with a water resistant
-        Tyono™ 20 face fabric that is breathable and durable. Perfect for taking
-        on the elements in style, a signature logo embroidered on the chest.
-        100% Nylon Packable Drawstring Hood Zip Closure Side Pockets
-      </p>
-      <h2>SIZING</h2>
-      <p>
-        Fits true to size Model is 6ft 1in/1.85m, with a 38"/98.5cm chest, a
-        31"/79cm waist, and is wearing a size Large
-      </p>
-      <a href="#">Size Guide</a>
-      <h2>SHIPPING</h2>
-      <p>
-        FREE DPD Economy Service on orders over €250.00 Order now to receive Wed
-        18 Sep - Thu 19 Sep €7.99 via DPD Economy Service Order now to receive
-        Wed 18 Sep - Thu 19 Sep €13.99 via FedEx Priority Service Order now to
-        receive Tue 17 Sep - Wed 18 Sep
-      </p>
-      <h2>RETURNS</h2>
-      <p>Mens Brands Arc'teryx Arc'teryx Atom Hoodie Jacket</p>
-    </section>
-    <section>
-      <h2>Sign up to The END. Menswear Mailing List</h2>
-      <p>Sign up for exclusive early sale access and tailored new arrivals</p>
-      <p>Email Address</p>
-      <button>SIGN UP</button>
-      <img src="IMG/instalogo.png" alt="instalogo" />
-      <img src="IMG/twitter.png" alt="twitterlogo" />
-      <img src="IMG/facebooklogo.png" alt="facebooklogo" />
-    </section>
+      <section>
+        <h2 class="description">DESCRIPTION</h2>
+        <p class="description">
+          Gearing you up for ambitious treks and easy hikes, Arc'teryx is now at
+          the top of performance outerwear game. Insulated with synthetic
+          Coreloft™ fill, this hooded jacket is designed with a water resistant
+          Tyono™ 20 face fabric that is breathable and durable. Perfect for
+          taking on the elements in style, a signature logo embroidered on the
+          chest. 100% Nylon Packable Drawstring Hood Zip Closure Side Pockets
+        </p>
+        <h2 class="description">SIZING</h2>
+        <p class="description">
+          Fits true to size Model is 6ft 1in/1.85m, with a 38"/98.5cm chest, a
+          31"/79cm waist, and is wearing a size Large
+        </p>
+        <h2 class="description">SHIPPING</h2>
+        <p class="description">
+          FREE DPD Economy Service on orders over €250.00 Order now to receive
+          Wed 18 Sep - Thu 19 Sep €7.99 via DPD Economy Service Order now to
+          receive Wed 18 Sep - Thu 19 Sep €13.99 via FedEx Priority Service
+          Order now to receive Tue 17 Sep - Wed 18 Sep
+        </p>
+        <h2 class="description">RETURNS</h2>
+      </section>
 
-    <footer>
-      <ul>
+      <div class="form-container">
+        <h2>SIGN UP TO OUR NEWSLETTER</h2>
+        <p>Get exclusive updates and offers</p>
+        <form class="signup-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="email-input"
+            required
+          />
+          <button
+            type="submit"
+            class="signup-button"
+            aria-label="Sign up for the newsletter"
+          >
+            SIGN UP
+          </button>
+        </form>
+      </div>
+
+      <div class="overlay">
+        <div class="overlay-content" role="alert" aria-live="assertive">
+          <p>Thank you for signing up!</p>
+          <img src="IMG/endlogo.png" alt="END logo" class="centered-image" />
+
+          <button
+            class="overlay-close"
+            aria-label="Close the thank you message"
+          >
+            OK
+          </button>
+        </div>
+      </div>
+
+      <ul class="socials">
+        <li><img src="IMG/instalogo.png" alt="insta logo" /></li>
+        <li><img src="IMG/twitterlogoGOED.png" alt="twitter logo" /></li>
+        <li><img src="IMG/facebooklogo.png" alt="facebook logo" /></li>
+      </ul>
+    </main>
+    <footer role="contentinfo">
+      <ul class="menu">
         <li>ABOUT</li>
         <li>CUSTOMER SERVICE</li>
         <li>CONTACT US</li>
       </ul>
-      <a href="#">
-        <p>Our apps</p>
-        <img src="IMG/endapp.jpeg" alt="endclothing app" />
-      </a>
-      <a href="#">
-        <p>Gift Cards</p>
-        <img src="IMG/giftcards.jpeg" alt="giftcards icon" />
-      </a>
 
-      <ul>
+      <ul class="centered-list">
         <li>Terms & Conditions</li>
         <li>Privacy Policy</li>
         <li>Other Policies</li>
         <li>Sitemap</li>
       </ul>
-      <img src="IMG/paymentmethods.jpeg" alt="paymentmethods" />
-      <p>
+
+      <img
+        src="IMG/paymentmethods.jpeg"
+        alt="paymentmethods"
+        class="centered-image"
+      />
+      <p class="centered-list">
         Copyright © Ashworth and Parker Limited (t/a END.) 2024 | All Rights
         Reserved Company registration number: 06866013 | VAT number: GB
         389764913
       </p>
+
+      <div class="sticky-footer">
+        <button class="add-to-cart" aria-label="Save to wishlist">
+          ADD TO CART
+        </button>
+        <!--https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers-->
+      </div>
     </footer>
   </body>
 </html>
