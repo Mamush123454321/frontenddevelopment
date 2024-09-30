@@ -14,15 +14,15 @@ Nb. Door _open_ toe te voegen aan een _details_ element kun je deze standaard op
 
 ### Auteur:
 
-    Mamush Hepark 
+    Mamush Hepark
 
 #### Je startniveau:
 
-Blauw 
+Blauw
 
 #### Je focus:
 
-Surface plane 
+Surface plane
 
 </details>
 
@@ -92,7 +92,8 @@ Eventuele oplossingen:
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+In ben ik vooral gaan oriënteren, hoe zit de site in elkaar en welke delen zullen een uitdaging zijn om na te maken.
+Aan de hand van de breakdownschets heb ik vrij soepel mijn html op weten te zetten voor beide pagina's. Ook heb ik gekeken naar elementen in de site, zoals de slider, die een uitdaging zullen zijn in de toekomst.
 
 ### Agenda voor meeting
 
@@ -108,7 +109,7 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
+- html is in orde
 - punt 2
 - nog een punt
 - ...
@@ -122,7 +123,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+redelijk op schema laatste styling afmaken en dan door naar surface plane. Sommige styling kan beter worden afgewerkt maar goed op weg. Er is een positief vooruitzicht en het is zeker nog haalbaar. Nu nog bedenken wat je gaat doen qua surface plane.
 
 ### Agenda voor meeting
 
@@ -138,9 +139,8 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
+- goed op weg en duidelijke antwoorden gekregen op de vragen
+- nu lijstje maken van surface plane en nog even blokken
 - ...
 
 </details>
@@ -153,6 +153,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+nachtmodus is verbeterd, de site is beter te gebruiken met een screenreader en de altteksten zijn sterk verbeterd.
+
+Door de test besef ik me dat mijn site sterk is verbeterd in toegankelijkheid in de loop van de opracht. Wel zijn er nog een aantal punten die missen zoals bijvoorbeeld de skiplink of het verhoogde contrast.
 
 </details>
 
@@ -163,7 +166,7 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De html en styling is nu goed af alleen nog surface plane. Hier loop ik nog tegen een aantal dingen aan die ik in de eindsprint zal afmaken. Naar mijn idee lig ik goed op schema.
 
 ### Agenda voor meeting
 
@@ -179,7 +182,7 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
+- nu duidelijk welke laatste surface plane elementen ik moet toevoegen en nu heb ik er ook goede bronnen bij.
 - punt 2
 - nog een punt
 - ...
@@ -193,19 +196,17 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Je uitkomst - karakteristiek screenshots:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/sseindresultaat1.jpg" width="375px" alt="uitomst opdracht 1">
 
 ### Dit ging goed/Heb ik geleerd:
 
-Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+De html ging vrij vloeiend echter was de styling vrij moeilijk. Ook het maken van de sliders en producten die wisselen van opacity vond ik lastig. Wat ik heb geleerd is het vinden van goede bronnen en hier zelf op doorwerken. Ook heb ik geleerd hoe je een effectieve slider kunt maken.
 
 ### Dit was lastig/Is niet gelukt:
 
-Korte omschrijving met plaatjes
+Het maken van een twee bij twee slider is mij helaas niet gelukt.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/sliderss.jpg" width="375px" alt="bummer">
 </details>
 
 ## Bronnenlijst
@@ -217,8 +218,15 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
-1. bron 1
-2. bron 2
-3. ...
+1. bron 1 burgermenu https://codepen.io/g13nn/pen/eHGEF https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+2. bron 2 email formulier https://www.w3schools.com/howto/howto_js_popup_form.asp
+   https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid
+3. bron 3 slider https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+4. bron 4 lazy loading opacity https://codepen.io/malchata/pen/YeMyrQ
+
+5. bron 5 size selection form https://www.w3schools.com/html/html_forms.asp?
+   https://www.w3schools.com/js/js_validation.asp
+6. bron 6 sticky footer https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers
 
 </details>
