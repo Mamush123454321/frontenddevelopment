@@ -3,271 +3,543 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>Home page</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="scripts/script.js"></script>
   </head>
+
   <body>
-    <header>
-      <p>Burger Menu</p>
-      <h1><img src="IMG/endapp.jpeg" alt="END logo" /></h1>
-      <p>zoekbalk</p>
-      <p>Shopping bag</p>
+    <header role="banner">
+      <img class="burgermenu" src="IMG/burgermenu.png" alt="burgermenu" />
+      <h1><img src="IMG/endlogo.png" alt="END logo" class="burgermenu" /></h1>
+      <img class="burgermenu" src="IMG/search.png" alt="search icon" />
+      <img src="IMG/shoppingbag.png" class="burgermenu" alt="shopping bag" />
     </header>
-    <section>
-      <button>Men</button>
-      <button>Women</button>
-      <img src="IMG/modelphoto2.jpeg" alt="Modelphotot" />
-      <h2>TRANSITIONAL EDIT</h2>
-      <p>Shop the edit</p>
-      <button>ONLINE NOW</button>
 
-      <img src="IMG/modelphotobalenci.jpeg" alt="Model wearing balenciaga"/>
-      <h2>LUXURY</h2>
-      <p>Discover the latest from Balenciaga and more.</p>
-      <button>SHOP NOW</button>
+    <nav class="mobile-menu hidden" aria-hidden="true">
+      <div class="menu-header">
+        <h1 class="menu-logo">END.</h1>
+        <button class="menu-close" aria-label="Close menu">&times;</button>
+      </div>
 
-      <img src="IMG/modelphoto3.jpeg" alt="Modelphoto" />
-      <h2>Polar Skate Co.</h2>
-      <p>The latest drop.</p>
-      <button>SHOP NOW</button>
-    </section>
+      <div class="men-women-toggle">
+        <button class="toggle-button active">Men</button>
+        <button class="toggle-button">Women</button>
+      </div>
 
-    <section class="row1">
-      <h2>NEW IN</h2>
+      <ul>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">Shop By</a></li>
+        <li><a href="#">Launches</a></li>
+        <li><a href="#">Brands</a></li>
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">Footwear</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Lifestyle</a></li>
+        <li><a href="#">Active</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Features</a></li>
+      </ul>
 
-      <a href="#">View All</a>
-      <article  >
-        <img src="IMG/blackbomber.jpeg" alt="blackbomber"  />
-        <h3>Stone Island Ghost Twill Wool-TC Jacket</h3>
-        <p class="grey-text">Black</p>
-        <p>$1619</p>
-      </article>
+      <ul>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Shipping Country: Netherlands | EUR €</a></li>
+      </ul>
 
-      <article >
-        <img src="IMG/greenbuttondown.jpeg" alt="greenbuttondown"  />
-        <h3>Stone Island Ghost Overshirt</h3>
-        <p class="grey-text">Military Green</p>
-        <p>$705</p>
-      </article>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Customer Service</a></li>
+        <li><a href="#">Our Apps</a></li>
+        <li><a href="#">Gift Cards</a></li>
+      </ul>
 
-      <article>
-        <img src="IMG/greenzip.jpeg" alt="greenzip" />
-        <h3>Stone Island Ghost Zip Through Sweatshirt</h3>
-        <p class="grey-text">Military Green</p>
-        <p>$559</p>
-      </article>
+      <ul class="social-media">
+        <li>
+          <a href="#"><img src="IMG/instalogo.png" alt="Instagram logo" /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="IMG/twitterlogoGOED.png" alt="Twitter logo"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="IMG/facebooklogo.png" alt="Facebook logo" /></a>
+        </li>
+      </ul>
 
-      <article>
-        <img src="IMG/blackstonepants.jpeg" alt="black pants" />
-        <h3>Stone Island Ghost Ventile Pleated Pant</h3>
-        <p class="grey-text">Black</p>
-        <p>$589</p>
-      </article>
-    </section>
+      <ul>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Other Policies</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
 
-    <!--Grote blokken zijn articles  + onzichtbare header omdat er geen kopje is want section moet een titel hebben 
-Wel laten voorlezen door screenreader maar visueel uit 
- -->
+      <p class="footer-text">
+        Copyright © Ashworth and Parker Limited (t/a END.) 2024 | All Rights
+        Reserved
+        <br />
+        Company registration number: 06866013 | VAT number: GB 389764913
+      </p>
 
-    <section>
-      <article>
-        <a href="#">
-        <img src="IMG/bus.jpeg" alt="bus" />
-        <h2>LEVI'S X JJJJOUND</h2>
-        <p>Shop Now</p>
-      </a>
-      </article>
+      <!-- bron: https://codepen.io/g13nn/pen/eHGEF-->
+    </nav>
 
-      <article>
-        <a href="#">
-          <img src="IMG/modelbape.jpeg" alt="model wearing bape" />
-          <h2>STREETWEAR</h2>
-          <p>Online Now</p>
-        </a>
-      </article>
+    <main class="main-content" role="main">
+      <div class="menwomen">
+        <button class="menwomen-button">Men</button>
+        <button class="menwomen-button">Women</button>
+      </div>
 
-        <article>
-          <a href="#">
-          <img src="IMG/birkenstocks.jpeg" alt="birkenstocks" />
-          <h2>Birkenstock</h2>
-          <p>Shop Now</p>
-        </a>
-        </article>
+      <section class="slider">
+        <ul>
+          <li>
+            <img
+              src="IMG/modelphoto2.jpeg"
+              alt="Model wearing rain jacket"
+              class="modelphoto"
+            />
+            <h2>TRANSITIONAL EDIT</h2>
+            <p>Shop the new look.</p>
+            <button aria-label="Shop Transitional Edit">SHOP NOW</button>
+          </li>
+          <li>
+            <img
+              src="IMG/modelphotobalenci.jpeg"
+              alt="Model wearing balenciaga"
+              class="modelphoto"
+            />
+            <h2>LUXURY</h2>
+            <p>Discover the latest from Balenciaga and more.</p>
+            <button aria-label="Shop Luxury Collection">SHOP NOW</button>
+          </li>
+          <li>
+            <img
+              src="IMG/modelphoto3.jpeg"
+              alt="Model wearing skate clothes "
+              class="modelphoto"
+            />
+            <h2>Polar Skate Co.</h2>
+            <p>The latest drop.</p>
+            <button aria-label="Shop Polar Skate Co.">SHOP NOW</button>
+          </li>
+        </ul>
+        <!--https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+      </section>
 
-        <article>
-          <a href="#">
-          <img src="IMG/colebuxton.jpeg" alt="colebuxton" />
-          <h2>Cole Buxton</h2>
-          <p>Online Now</p>
-        </a>
-        </article>
+      <section class="row1">
+        <h2>NEW IN</h2>
+        <a href="#" class="viewall" aria-label="View all new products"
+          >View All</a
+        >
+        <ul class="slider2">
+          <li class="clothing-item">
+            <img src="IMG/pradaski.jpeg" alt="black prada sunglasses" />
+            <h3>Stone Island Ghost Twill Wool-TC Jacket</h3>
+            <p class="grey-text">Black</p>
+            <p>$1619</p>
+          </li>
+          <li class="clothing-item">
+            <img src="IMG/blackbalenci.jpeg" alt="black balenciaga jacket" />
+            <h3>Stone Island Ghost Overshirt</h3>
+            <p class="grey-text">Military Green</p>
+            <p>$705</p>
+          </li>
+          <li class="clothing-item">
+            <img src="IMG/balencipants.jpeg" alt="black balenciaga pants" />
+            <h3>Stone Island Ghost Zip Through Sweatshirt</h3>
+            <p class="grey-text">Military Green</p>
+            <p>$559</p>
+          </li>
+          <li class="clothing-item">
+            <img
+              src="IMG/blackmargiela.jpeg"
+              alt="black maison margiela shoes with paint splatters"
+            />
+            <h3>Stone Island Ghost Ventile Pleated Pant</h3>
+            <p class="grey-text">Black</p>
+            <p>$589</p>
+          </li>
+        </ul>
+
+        <ul class="slider2">
+          <li class="clothing-item">
+            <img
+              src="IMG/blackbomber.jpeg"
+              alt="black stone island bomber jacket"
+            />
+            <h3>Stone Island Ghost Twill Wool-TC Jacket</h3>
+            <p class="grey-text">Black</p>
+            <p>$1619</p>
+          </li>
+          <li class="clothing-item">
+            <img
+              src="IMG/greenbuttondown.jpeg"
+              alt="green stone island button down"
+            />
+            <h3>Stone Island Ghost Overshirt</h3>
+            <p class="grey-text">Military Green</p>
+            <p>$705</p>
+          </li>
+          <li class="clothing-item">
+            <img src="IMG/greenzip.jpeg" alt="green stone island  zip up " />
+            <h3>Stone Island Ghost Zip Through Sweatshirt</h3>
+            <p class="grey-text">Military Green</p>
+            <p>$559</p>
+          </li>
+          <li class="clothing-item">
+            <img
+              src="IMG/blackstonepants.jpeg"
+              alt="black stone island pants"
+            />
+            <h3>Stone Island Ghost Ventile Pleated Pant</h3>
+            <p class="grey-text">Black</p>
+            <p>$589</p>
+          </li>
+        </ul>
       </section>
 
       <section>
+        <article class="JJJOUND">
+          <a href="#">
+            <img
+              class="bus"
+              src="IMG/bus.jpeg"
+              alt="man leaning against a bus that says J J Jound "
+            />
+            <h2>LEVI'S X JJJJOUND</h2>
+            <p>Shop Now</p>
+          </a>
+        </article>
+
+        <article>
+          <a href="#">
+            <img
+              class="bus"
+              src="IMG/modelbape.jpeg"
+              alt="model wearing bape"
+            />
+            <h2>STREETWEAR</h2>
+            <p>Online Now</p>
+          </a>
+        </article>
+
+        <article>
+          <a href="#">
+            <img
+              class="bus"
+              src="IMG/birkenstocks.jpeg"
+              alt="birkenstock shoes stacked on top of eachother"
+            />
+            <h2>Birkenstock</h2>
+            <p>Shop Now</p>
+          </a>
+        </article>
+
+        <article>
+          <a href="#">
+            <img
+              class="bus"
+              src="IMG/colebuxton.jpeg"
+              alt="Model named cole buxton"
+            />
+            <h2>Cole Buxton</h2>
+            <p>Online Now</p>
+          </a>
+        </article>
+      </section>
+
+      <section class="launches">
         <h2>LAUNCHES</h2>
-        <a href="#">View All Launches</a>
-        <article>
-          <time datetime="2024-09-04">4 September</time>
-          <img src="IMG/asicswhite.jpeg" alt="asicswhite" />
-          <p>ASICS</p>
-          <h2>ASICS X ABOVE THE CLOUDS GT-2160 SNEAKER</h2>
-          <p>$169</p>
-        </article>
+        <a href="#" class="viewall" aria-label="View all new products"
+          >View All Launches</a
+        >
+        <ul class="slider">
+          <li class="clothing-item">
+            <article>
+              <img src="IMG/asicswhite.jpeg" alt="white asics shoes" />
+              <p>ASICS</p>
+              <h2>ASICS X ABOVE THE CLOUDS GT-2160 SNEAKER</h2>
+              <time datetime="2024-09-04">4 September</time>
+              <p>$169</p>
+            </article>
+          </li>
+          <li class="clothing-item">
+            <article>
+              <img src="IMG/adidascrewneck.jpeg" alt="grey adidas crewneck" />
+              <p>ASICS</p>
+              <h2>ASICS X ABOVE THE CLOUDS GT-2160 SNEAKER</h2>
+              <time datetime="2024-09-04">4 September</time>
+
+              <p>$169</p>
+            </article>
+          </li>
+          <li class="clothing-item">
+            <article>
+              <img
+                src="IMG/adidasbruincushion.jpeg"
+                alt="brown adidas sneakers"
+              />
+              <p>ASICS</p>
+              <h2>ASICS X ABOVE THE CLOUDS GT-2160 SNEAKER</h2>
+              <time datetime="2024-09-04">4 September</time>
+
+              <p>$169</p>
+            </article>
+          </li>
+        </ul>
       </section>
 
       <section>
         <article>
           <a href="#">
-          <img src="IMG/FOGHoodies.jpeg" alt="FearOfGod Hoodies" />
-          <h2>FEAR OF GOD ESSENTIELS</h2>
-          <p>Shop Now</p>
-        </a>
+            <img
+              class="bus"
+              src="IMG/FOGHoodies.jpeg"
+              alt="FearOfGod Hoodies"
+            />
+            <h2>FEAR OF GOD ESSENTIELS</h2>
+            <p>Shop Now</p>
+          </a>
         </article>
 
         <article>
           <a href="#">
-          <img src="IMG/arcteryx.jpeg" alt="model with arcteryx" />
-          <h3>ARC'TERYX</h3>
-          <p>Online Now</p>
-        </a>
+            <img
+              class="bus"
+              src="IMG/arcteryx.jpeg"
+              alt="model with arcteryx"
+            />
+            <h3>ARC'TERYX</h3>
+            <p>Online Now</p>
+          </a>
         </article>
 
         <article>
           <a href="#">
-          <img src="IMG/representshoes.jpeg" alt="represent shoes" />
-          <h3>REPRESENT</h3>
-          <p>Shop Now</p>
-        </a>
+            <img
+              class="bus"
+              src="IMG/representshoes.jpeg"
+              alt="represent shoes"
+            />
+            <h3>REPRESENT</h3>
+            <p>Shop Now</p>
+          </a>
         </article>
 
         <article>
           <a href="#">
-          <img src="IMG/carhartjas.jpeg" alt="carhart jacket" />
-          <h3>CARHARTT WIPP</h3>
-          <p>Online Now</p>
-        </a>
+            <img
+              class="bus"
+              src="IMG/carhartjas.jpeg"
+              alt="camo carhart jacket and green crewneck"
+            />
+            <h3>CARHARTT WIPP</h3>
+            <p>Online Now</p>
+          </a>
         </article>
       </section>
 
       <section class="row1">
-        <h2>NEW IN SNEAKERS</h2>
-        <a href="#">View All</a>
-        <article>
-          <img src="IMG/adidasbern.jpeg" alt="adidas bern" />
-          <h3>Adidas Bern</h3>
-          <p  class="grey-text">Wonder White, Off White & Gum5</p>
-          <p>$110</p>
-        </article>
+        <h2 class="launches">NEW IN SNEAKERS</h2>
+        <a href="#" class="viewall" aria-label="View all new products"
+          >View All</a
+        >
+        <ul class="slider2">
+          <li class="clothing-item">
+            <img src="IMG/adidasbern.jpeg" alt="white adidas bern shoes" />
+            <h3>Adidas Bern</h3>
+            <p class="grey-text">Wonder White, Off White & Gum5</p>
+            <p>$110</p>
+          </li>
+          <li class="clothing-item">
+            <img src="IMG/Autrysneaker.jpeg" alt="Autry chestnut sneaker" />
+            <h3>Autry Medalist Low Leather Sneaker</h3>
+            <p class="grey-text">Chestnut</p>
+            <p>$169</p>
+          </li>
+          <li class="clothing-item">
+            <img src="IMG/adidasbadbunny.jpeg" alt="adidas badbunny sneaker" />
+            <h3>Adidas x Bad Bunny Gazelle Indoor</h3>
+            <p class="grey-text">Core White, Core Black & Gum</p>
+            <p>$139</p>
+          </li>
+          <li class="clothing-item">
+            <img src="IMG/vanswhite.jpeg" alt="White Vans sneakers" />
+            <h3>Vans LX Authentic Reissue 44 Sneakers</h3>
+            <p class="grey-text">Duck Canvas Marshmallow</p>
+            <p>$95</p>
+          </li>
+        </ul>
 
-        <article>
-          <img src="IMG/Autrysneaker.jpeg" alt="Autry chestnut sneaker" />
-          <h3>Autry Medalist Low Leather Sneaker</h3>
-          <p  class="grey-text">Chestnut</p>
-          <p>$169</p>
-        </article>
-
-        <article>
-          <img src="IMG/newbalance.jpeg" alt="Brown new balance" />
-          <h3>New Balance U991BR2</h3>
-          <p  class="grey-text">Brown</p>
-          <p>$255</p>
-        </article>
-
-        <article>
-          <img src="IMG/airmax1beige.jpeg" alt="beige nike airmax" />
-          <h3>Nike Air Max 1 ESS Sneaker</h3>
-          <p  class="grey-text">Phantom & Khaki</p>
-          <p>€159</p>
-        </article>
+        <ul class="slider2">
+          <li>
+            <img src="IMG/newbalance.jpeg" alt="Brown new balance sneakers" />
+            <h3>New Balance U991BR2</h3>
+            <p class="grey-text">Brown</p>
+            <p>$255</p>
+          </li>
+          <li>
+            <img src="IMG/airmax1beige.jpeg" alt="beige nike airmax sneakers" />
+            <h3>Nike Air Max 1 ESS Sneaker</h3>
+            <p class="grey-text">Phantom & Khaki</p>
+            <p>€159</p>
+          </li>
+          <li>
+            <img src="IMG/bluevans.jpeg" alt="blue vans sneakers" />
+            <h3>Vans LX Authentic Reissue 44 Sneakers</h3>
+            <p class="grey-text">Duck Canvas Asphalt</p>
+            <p>€95</p>
+          </li>
+          <li>
+            <img src="IMG/rick.jpeg" alt="black rick owens shoes " />
+            <h3>Rick Owens Jumbo Lace Padded Low Sneakers</h3>
+            <p class="grey-text">Black, Milk & Milk</p>
+            <p>€815</p>
+          </li>
+        </ul>
       </section>
 
       <section class="row1">
-        <h2>TREND FOCUS: DENIM</h2>
+        <h2 class="launches">TREND FOCUS: DENIM</h2>
         <p>Shop Now</p>
         <button>SHOP NOW</button>
-        <img src="IMG/denimstack acne.jpeg" alt="Acne denimstack" />
-
+        <img class="bus" src="IMG/denimstackacne.jpeg" alt="Acne denim stack" />
         <article>
           <img src="IMG/JeansAcneblue.jpeg" alt="blue acne jeans" />
           <h3>Acne Studios 2023 Super Baggy Jeans</h3>
-          <p  class="grey-text">Broadway</p>
+          <p class="grey-text">Broadway</p>
           <p>$620</p>
         </article>
-
         <article>
           <img src="IMG/juddaacneshorts.jpeg" alt="judda jean shorts" />
           <h3>Acne Studios Judda Denim Shorts</h3>
-          <p  class="grey-text">Matrix</p>
+          <p class="grey-text">Matrix</p>
           <p>$450</p>
         </article>
-
         <article>
-          <img src="IMG/bapeshorts.jpeg" alt="bapeshorts" />
+          <img src="IMG/bapeshorts.jpeg" alt="bape jean shorts" />
           <h3>A Bathing Ape College Denim Shorts</h3>
-          <p  class="grey-text">Light Indigo</p>
+          <p class="grey-text">Light Indigo</p>
           <p>$449</p>
         </article>
-
         <article>
-          <img src="IMG/distressedjeans.jpeg" alt="distressed jeans" />
+          <img
+            src="IMG/distressedjeans.jpeg"
+            alt="blue distressed nahmias jeans"
+          />
           <h3>Nahmias Distressed Baggy Jeans</h3>
-          <p  class="grey-text">Light Wash</p>
+          <p class="grey-text">Light Wash</p>
           <p>$675</p>
         </article>
       </section>
 
       <section>
-        <h2>MALIN + GOETZ</h2>
-        <button>SHOP NOW</button>
-        <img src="IMG/skincare.jpeg" alt="skincare products" />
+        <img
+          class="bus"
+          src="IMG/skincare.jpeg"
+          alt="two bottles of yellow skincare products"
+        />
+        <div class="MALINGOETZ">
+          <h2>MALIN + GOETZ</h2>
+          <button>SHOP NOW</button>
+        </div>
       </section>
 
       <section>
-        <h2>FEATURES</h2>
-        <a href="#">View All</a>
-        <article>
-          <img src="IMG/yinka.jpeg" alt="Yinka artist" />
-          <p>09/09/2024</p>
-          <h2>YINKA ILORI'S WORLD OF COLOUR & OPTIMISM</h2>
-        </article>
+        <h2 class="launches">FEATURES</h2>
+        <a href="#" class="viewall" aria-label="View all new products"
+          >View All</a
+        >
+        <ul class="slider">
+          <li>
+            <img src="IMG/yinka.jpeg" alt="Yinka artist" />
+            <p>09/09/2024</p>
+            <h2>YINKA ILORI'S WORLD OF COLOUR & OPTIMISM</h2>
+          </li>
+          <li>
+            <img
+              src="IMG/londonscarculture.jpeg"
+              alt="two people on the hood of a BMW car"
+            />
+            <p>18/09/2024</p>
+            <h2>LONDON'S CAR CULTURE IS THRIVING</h2>
+          </li>
+          <li>
+            <img
+              src="IMG/endxlevis.jpeg"
+              alt="three people sitting in the forest dressed in beige clothing"
+            />
+            <p>16/09/2024</p>
+            <h2>END. X LEVI'S "MOUNT RAMBLER": serenity through Nature</h2>
+          </li>
+        </ul>
       </section>
+    </main>
 
-      <h2>Sign up to The END. Menswear Mailing List</h2>
-      <p>Sign up for exclusive early sale access and tailored new arrivals</p>
-      <p>Email Address</p>
-      <button>SIGN UP</button>
+    <footer role="contentinfo">
+      <div class="form-container">
+        <h2>SIGN UP TO OUR NEWSLETTER</h2>
+        <p>Get exclusive updates and offers</p>
+        <form class="signup-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="email-input"
+            required
+          />
+          <button type="submit" class="signup-button">SIGN UP</button>
+        </form>
+        <!--https://www.w3schools.com/howto/howto_js_popup_form.asp-->
+        <!--https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid-->
+        <!--https://www.w3schools.com/howto/howto_css_overlay.asp-->
+      </div>
+
+      <div class="overlay">
+        <div class="overlay-content" role="alert" aria-live="assertive">
+          <p>Thank you for signing up!</p>
+          <img src="IMG/endlogo.png" alt="END logo" class="centered-image" />
+
+          <button class="overlay-close">OK</button>
+        </div>
+      </div>
+
       <ul class="socials">
-        <li><img src="IMG/instalogo.png" alt="instalogo" /></li>
-        <li><img src="IMG/twitterlogoGOED.png" alt="twitterlogo" /></li>
-        <li><img src="IMG/facebooklogo.png" alt="facebooklogo" /></li>
+        <li><img src="IMG/instalogo.png" alt="insta logo" /></li>
+        <li><img src="IMG/twitterlogoGOED.png" alt="twitter logo" /></li>
+        <li><img src="IMG/facebooklogo.png" alt="facebook logo" /></li>
       </ul>
-    </section>
-    <footer>
-      <ul>
-        <li>ABOUT</li>
-        <li>CUSTOMER SERVICE</li>
-        <li>CONTACT US</li>
-      </ul>
-      <a href="#">
-        <p>Our apps</p>
-        <img src="IMG/endapp.jpeg" alt="endclothing app" />
-      </a>
-      <a href="#">
-        <p>Gift Cards</p>
-        <img src="IMG/giftcards.jpeg" alt="giftcards icon" />
-      </a>
-      <ul>
+
+      <nav>
+        <ul class="menu">
+          <li>ABOUT</li>
+          <li>CUSTOMER SERVICE</li>
+          <li>CONTACT US</li>
+        </ul>
+      </nav>
+
+      <ul class="centered-list">
         <li>Terms & Conditions</li>
         <li>Privacy Policy</li>
         <li>Other Policies</li>
         <li>Sitemap</li>
       </ul>
-      <img src="IMG/paymentmethods.jpeg" alt="paymentmethods" />
-      <p>
+
+      <img
+        src="IMG/paymentmethods.jpeg"
+        alt="paymentmethods"
+        class="centered-image"
+      />
+      <p class="centered-list">
         Copyright © Ashworth and Parker Limited (t/a END.) 2024 | All Rights
         Reserved Company registration number: 06866013 | VAT number: GB
         389764913
       </p>
+
+      <h2>
+        <img src="IMG/endlogo.png" alt="END logo" class="centered-image" />
+      </h2>
     </footer>
   </body>
 </html>
