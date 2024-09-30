@@ -196,7 +196,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Je uitkomst - karakteristiek screenshots:
 
-  <img src="readme-images/sseindresultaat1.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/sseindresultaat1.jpeg" width="375px" alt="uitomst opdracht 1">
 
 ### Dit ging goed/Heb ik geleerd:
 
@@ -206,7 +206,7 @@ De html ging vrij vloeiend echter was de styling vrij moeilijk. Ook het maken va
 
 Het maken van een twee bij twee slider is mij helaas niet gelukt.
 
-  <img src="readme-images/sliderss.jpg" width="375px" alt="bummer">
+  <img src="readme-images/sliderss.jpeg" width="375px" alt="bummer">
 </details>
 
 ## Bronnenlijst
